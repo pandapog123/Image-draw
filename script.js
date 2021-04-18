@@ -1,6 +1,7 @@
 let ismousedown = true;
 
 const sorc = document.querySelector('#src');
+const scale = document.querySelector('#scale');
 
 document.addEventListener('mousedown', e => {
     ismousedown = false;
@@ -12,9 +13,11 @@ document.addEventListener('mouseup', e => {
 
 document.addEventListener('mousemove', e => {
     if (!ismousedown) {
-        if (sorc.value != '') {
+        if (sorc.value != '' && scale.value != '') {
             const img = document.createElement('img');
             img.className = 'img';
+            img.width = scale.value + 'px';
+            img.height = scale.value + 'px';
             img.src = sorc.value;
             document.body.appendChild(img);
             img.style.top = e.clientY + 10 + 'px';
