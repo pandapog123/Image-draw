@@ -16,8 +16,8 @@ document.addEventListener('mousemove', e => {
         if (sorc.value != '' && scale.value != '') {
             const img = document.createElement('img');
             img.className = 'img';
-            img.width = scale.value + 'px';
-            img.height = scale.value + 'px';
+            img.style.width = scale.value + 'px';
+            img.style.height = scale.value + 'px';
             console.log(scale.value);
             img.src = sorc.value;
             document.body.appendChild(img);
