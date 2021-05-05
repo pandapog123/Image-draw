@@ -14,11 +14,19 @@ document.addEventListener('mouseup', () => {
 
 document.addEventListener('touhstart', () => {
     ismousedown = false;
-}, false);
+});
 
 document.addEventListener('touchend', () => {
     ismousedown = true;
-}, false);
+});
+
+$(document).ready(() => {
+    $(document).on('mousedown', () => {
+        ismousedown = false;
+    }).on('mouseup', () => {
+        ismousedown = true;
+    });
+});
 
 document.addEventListener('mousemove', e => {
     if (!ismousedown) {
