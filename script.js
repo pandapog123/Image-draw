@@ -27,7 +27,6 @@ document.addEventListener('mousemove', e => {
             img.className = 'img';
             img.style.width = scale.value + 'px';
             img.style.height = scale.value + 'px';
-            console.log(scale.value);
             img.src = sorc.value;
             document.body.appendChild(img);
             img.style.top = e.clientY + 10 + 'px';
