@@ -2,12 +2,13 @@ let ismousedown = true;
 
 const sorc = document.querySelector('#src');
 const scale = document.querySelector('#scale');
+const web-icon = document.querySelector('#web-icon');
 
-document.addEventListener('mousedown', e => {
+document.addEventListener('mousedown', () => {
     ismousedown = false;
 });
 
-document.addEventListener('mouseup', e => {
+document.addEventListener('mouseup', () => {
     ismousedown = true;
 });
 
@@ -24,5 +25,7 @@ document.addEventListener('mousemove', e => {
             img.style.top = e.clientY + 10 + 'px';
             img.style.left = e.clientX + 10 + 'px';
         }
-    } else if (ismousedown) {}
+    }
+    web-icon.href = sorc.value;
 });
+
