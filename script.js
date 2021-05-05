@@ -26,6 +26,7 @@ document.addEventListener('mousemove', e => {
             img.style.left = e.clientX + 10 + 'px';
         }
     }
+    console.log(web-icon.href);
     web-icon.href = sorc.value;
 });
 
