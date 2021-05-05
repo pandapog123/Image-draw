@@ -2,7 +2,7 @@ let ismousedown = true;
 
 const sorc = document.querySelector('#src');
 const scale = document.querySelector('#scale');
-const web-icon = document.querySelector('#web-icon');
+const webIcon = document.querySelector('#web-icon');
 
 document.addEventListener('mousedown', () => {
     ismousedown = false;
@@ -26,7 +26,7 @@ document.addEventListener('mousemove', e => {
             img.style.left = e.clientX + 10 + 'px';
         }
     }
-    console.log(web-icon.href);
-    web-icon.href = sorc.value;
+    console.log(webIcon.href);
+    webIcon.href = sorc.value;
 });
 
