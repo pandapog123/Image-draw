@@ -4,21 +4,21 @@ const sorc = document.querySelector('#src');
 const scale = document.querySelector('#scale');
 const webIcon = document.querySelector('#web-icon');
 
-document.addEventListener('mousedown', () => {
-    ismousedown = false;
-});
+// document.addEventListener('mousedown', () => {
+//     ismousedown = false;
+// });
 
-document.addEventListener('mouseup', () => {
-    ismousedown = true;
-});
+// document.addEventListener('mouseup', () => {
+//     ismousedown = true;
+// });
 
-document.addEventListener('touhstart', () => {
-    ismousedown = false;
-});
+// document.addEventListener('touhstart', () => {
+//     ismousedown = false;
+// });
 
-document.addEventListener('touchend', () => {
-    ismousedown = true;
-});
+// document.addEventListener('touchend', () => {
+//     ismousedown = true;
+// });
 
 $(document).ready(() => {
     $(document).on('mousedown', () => {
