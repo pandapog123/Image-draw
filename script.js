@@ -12,6 +12,14 @@ document.addEventListener('mouseup', () => {
     ismousedown = true;
 });
 
+document.addEventListener('touhstart', () => {
+    ismousedown = false;
+});
+
+document.addEventListener('touchend', () => {
+    ismousedown = true;
+});
+
 document.addEventListener('mousemove', e => {
     if (!ismousedown) {
         if (sorc.value != '' && scale.value != '') {
