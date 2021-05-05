@@ -1,4 +1,5 @@
 // For all of you in github, visit https://image-draw.netlify.app
+// Also pls tell me what is the mouse down and mouse up event for mobile
 
 let ismousedown = true;
 
